@@ -1,0 +1,11 @@
+// ساخت جدول پیام
+CREATE TABLE Messages (
+    ID INT PRIMARY KEY,
+    UserID INT,
+    MessageText VARCHAR(255),
+    MessageTime DATETIME
+);
+
+// درج پیام جدید توسط کاربر
+INSERT INTO Messages (ID, UserID, MessageText, MessageTime)
+VALUES (1, 123, 'این یک پیام است', CURRENT_TIMESTAMP);
